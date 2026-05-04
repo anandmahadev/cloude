@@ -21,10 +21,10 @@ body {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     position: relative;
-    overflow: hidden;
+    overflow-y: auto;
 }
 
 /* Subtle background pattern/texture for depth */
@@ -47,6 +47,7 @@ body::before {
     justify-content: center;
     align-items: center;
     width: 100%;
+    min-height: 100vh;
     padding: 20px;
     z-index: 1;
 }
@@ -245,4 +246,26 @@ body::before {
     max-width: 700px;
     margin: 0 auto;
     line-height: 1.5;
+}
+
+.seo-section {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto 4rem auto;
+    padding: 0 20px;
+    z-index: 1;
+}
+
+.seo-card {
+    background: var(--card-bg);
+    border: 1px solid var(--border-color);
+    border-radius: 20px;
+    padding: 2.5rem;
+    box-shadow: 0 10px 25px -5px rgba(15, 23, 42, 0.05);
+}
+
+.about-section {
+    margin-top: 2rem;
+    padding-top: 2rem;
+    border-top: 1px solid var(--border-color);
 }
