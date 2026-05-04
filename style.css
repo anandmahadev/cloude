@@ -193,6 +193,37 @@ body::before {
     font-weight: 600;
 }
 
+.faq-preview {
+    text-align: left;
+    background: #f1f5f9;
+    padding: 1.5rem;
+    border-radius: 16px;
+    margin-bottom: 2rem;
+    border: 1px solid var(--border-color);
+}
+
+.faq-heading {
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--text-main);
+    margin-bottom: 0.75rem;
+}
+
+.faq-list {
+    list-style: none;
+    font-size: 0.875rem;
+    color: var(--text-muted);
+}
+
+.faq-list li {
+    margin-bottom: 0.5rem;
+    line-height: 1.4;
+}
+
+.faq-list li strong {
+    color: var(--accent-red);
+}
+
 .footer {
     padding: 1.5rem 2rem;
     text-align: center;

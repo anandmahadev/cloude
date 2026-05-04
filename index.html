@@ -21,6 +21,48 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "niat.me",
+      "url": "https://niat.me/",
+      "description": "Independent student-run source for NIAT reviews and life at NIAT.",
+      "keywords": "NIAT, NIAT reviews, life at NIAT, about NIAT"
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What is NIAT?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "NIAT (Neotia Institute of Technology Management and Science) is a technical institute. niat.me provides independent student reviews and insights into life at NIAT."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Where can I find honest NIAT reviews?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "niat.me is an independent platform dedicated to sharing honest NIAT reviews and genuine student experiences."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How is life at NIAT?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Life at NIAT involves a blend of academic rigor and student activities. Our site niat.me explores real-life experiences from a student perspective."
+          }
+        }
+      ]
+    }
+    </script>
 </head>
 <body>
     <main class="container">
@@ -30,13 +72,22 @@
             <p class="description">Your premier student-run source for unfiltered information about NIAT. We're building a comprehensive platform for NIAT reviews, insights into life at NIAT, and everything else you need to know. Launching soon.</p>
             
             <div class="video-container">
-                <video controls autoplay loop muted playsinline style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover;">
+                <video title="Life at NIAT - Student Perspective" aria-label="Life at NIAT Video" controls autoplay loop muted playsinline style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover;">
                     <source src="https://archive.org/download/Rick_Astley_Never_Gonna_Give_You_Up/Rick_Astley_Never_Gonna_Give_You_Up.mp4" type="video/mp4">
                     Your browser does not support the video tag.
                 </video>
             </div>
 
-            <form class="notify-form" onsubmit="event.preventDefault(); alert('Thank you for your interest! We will notify you when we launch.');">
+            <div class="faq-preview">
+                <h3 class="faq-heading">Frequently Asked Questions about NIAT</h3>
+                <ul class="faq-list">
+                    <li><strong>Is NIAT good?</strong> Explore honest NIAT reviews from current students.</li>
+                    <li><strong>Placement at NIAT?</strong> Real data on NIAT placement reviews launching soon.</li>
+                    <li><strong>NIAT Campus?</strong> Get the inside scoop on life at NIAT campus.</li>
+                </ul>
+            </div>
+
+            <form class="notify-form" aria-label="Newsletter Signup" onsubmit="event.preventDefault(); alert('Thank you for your interest! We will notify you when we launch.');">
                 <input type="email" placeholder="Enter your email address" required class="email-input" id="email">
                 <button type="submit" class="notify-btn">Notify Me</button>
             </form>
